@@ -31,7 +31,7 @@ function copyit(el)
       if (document.queryCommandSupported("copy"))
       {
       var successful = document.execCommand('copy');  
-        if (successful)  $('body').append('<p class="copied"><input class="text" value="' + $(el).text() + '" /><span class="copybtn">✔ Copied !</span></p>'), setTimeout(function () { $('.copied').remove(); }, 1000)
+        if (successful)  $('body').append('<p class="copied"><input class="text" value="' + $(el).text() + '" /><span class="copybtn">👌✔ Copied !</span></p>'), setTimeout(function () { $('.copied').remove(); }, 1000)
         else $('body').append('<p class="copied"><input class="text" value="Press CTRL+C to copy" /></p>'), setTimeout(function () { $('.copied').remove(); }, 1000)
     }
     else
